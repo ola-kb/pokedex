@@ -1,0 +1,156 @@
+html {
+    background-image: url("https://img.freepik.com/free-vector/yellow-diagonal-geometric-striped-background-with-halftone-detailed_1409-1451.jpg?w=1060&t=st=1667817145~exp=1667817745~hmac=03a18f1dfdfa27b05d48af60eec325fb8b7b4086073fc0bf778827957ccfd906");
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 3em;
+}
+
+h1 {
+    color: white;
+    background: black;
+    text-align: center;
+    font-size: 3em;
+    padding: 1em;
+    margin: 1em 0;
+    width: auto;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+figure img {
+    width: 200px;
+}
+
+.btn {
+    width: 300px;
+    height: 150px;
+    transition: width 2s, height 2s, transform 2s;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 10% / 50%;
+}
+
+.btn:hover {
+    width: 350px;
+    height: 150px;
+    transform: rotate(360deg);
+}
+
+.generation {
+    height: 0;
+    overflow: hidden;
+    transition: height 2s;
+}
+
+.pokeDiv {
+    display: inline-block;
+    text-align: center;
+}
+
+.generation img {
+    display: block;
+}
+
+.generationHidden {
+    height: 850px;
+    overflow-y: scroll;
+}
+
+#myform {
+    margin: 0 1em;
+}
+
+form>input,
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+form button:hover {
+    background-color: #e9edc9;
+}
+
+form button:active {
+    background-color: #d5bdaf;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.link {
+    text-decoration: none;
+    color: yellow;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 1em;
+    margin: 1em 0;
+    width: auto;
+    font-size: 1.1em;
+}
+
+.author {
+    text-align: right;
+}
+
+@media screen and (max-width: 865px) {
+    figure img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:760px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    figure img {
+        transform: rotate(80deg);
+    }
+}
+
+@media screen and (max-width:500px) {
+    .btn {
+        width: 200px;
+        height: 100px;
+    }
+
+    .btn:hover {
+        width: 250px;
+        height: 100px;
+        transform: rotate(360deg);
+    }
+
+    figure img {
+        transform: rotate(20deg);
+    }
+
+    form>input,
+    button {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0.5em 0;
+    }
+}
